@@ -1,0 +1,17 @@
+{
+  "name": "@purplefish/tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 0",
+    "format": "prettier --write .",
+    "lint": "prettier --check ."
+  },
+  "dependencies": {
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@purplefish/prettier-config": "workspace:*",
+    "prettier": "^3.3.3"
+  }
+}

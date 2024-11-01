@@ -1,0 +1,22 @@
+{
+  "extends": "@purplefish/tsconfig/base.json",
+  "compilerOptions": {
+    /* Base URL is a MUST. */
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "incremental": true,
+    "jsx": "preserve",
+    "noEmit": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "next.config.mjs",
+    "next-sitemap.config.js",
+    "postcss.config.js",
+    "tailwind.config.js",
+    "src",
+    ".eslintrc.cjs"
+  ]
+}

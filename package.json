@@ -1,0 +1,27 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "patch-package && npx turbo prisma-generate --concurrency=1",
+    "build": "turbo build",
+    "format": "turbo format",
+    "lint": "turbo lint",
+    "release": "turbo release",
+    "start": "turbo start",
+    "test": "turbo test",
+    "test-locales": "turbo test-locales"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "devDependencies": {
+    "@purplefish/tsconfig": "workspace:*",
+    "patch-package": "^8.0.0",
+    "turbo": "^2.1.1"
+  },
+  "packageManager": "yarn@4.4.1"
+}

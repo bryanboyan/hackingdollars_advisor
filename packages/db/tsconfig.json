@@ -1,0 +1,12 @@
+{
+  "extends": "@purplefish/tsconfig/base.json",
+  "compilerOptions": {
+    /* Base URL is a MUST. */
+    "baseUrl": "./src/",
+    "rootDir": "./",
+    "outDir": "dist",
+    "jsx": "preserve",
+    "sourceMap": true
+  },
+  "include": ["src", "prisma/seed.ts", ".eslintrc.cjs"]
+}

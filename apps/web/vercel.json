@@ -1,0 +1,9 @@
+{
+  "buildCommand": "npx turbo build --filter=@purplefish/purplefish-web",
+  "ignoreCommand": "exit 1",
+  "trailingSlash": true,
+  "cleanUrls": true,
+  "git": {
+    "deploymentEnabled": false
+  }
+}
