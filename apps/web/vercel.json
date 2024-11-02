@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npx turbo build --filter=@purplefish/purplefish-web",
+  "buildCommand": "npx turbo build --filter=@hackingdollars/web",
   "ignoreCommand": "exit 1",
   "trailingSlash": true,
   "cleanUrls": true,
