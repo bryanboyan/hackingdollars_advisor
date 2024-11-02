@@ -1,4 +1,4 @@
-# Purplefish Project
+# Hackingdollars Project
 
 The codebase is a [monorepo](https://en.wikipedia.org/wiki/Monorepo).
 
@@ -30,7 +30,7 @@ This app requires Node.js 20.
 API keys are hard-coded in the repository for convenience. Ensure that this code is not made public.
 
 1. Run `yarn` to install dependencies. (To run `yarn`, make sure Corepack is working: https://yarnpkg.com/corepack).
-2. To start the app: `npx turbo dev --filter=@purplefish/web`.
+2. To start the app: `npx turbo dev --filter=@hackingdollars/web`.
 3. Open `http://localhost:5206/` in the browser.
 
 ## CLI

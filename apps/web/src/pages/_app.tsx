@@ -49,7 +49,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 
       <DirectionProvider dir="ltr">
         <NextSeo
-          titleTemplate="%s - Purplefish"
+          titleTemplate="%s - Hackingdollars"
           defaultTitle="Chatbot"
           description="AI chatbot"
         />

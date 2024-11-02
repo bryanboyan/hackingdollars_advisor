@@ -1271,9 +1271,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@purplefish/web@workspace:apps/web":
+"@hackingdollars/web@workspace:apps/web":
   version: 0.0.0-use.local
-  resolution: "@purplefish/web@workspace:apps/web"
+  resolution: "@hackingdollars/web@workspace:apps/web"
   dependencies:
     "@langchain/community": "npm:^0.3.11"
     "@langchain/core": "npm:^0.3.17"
