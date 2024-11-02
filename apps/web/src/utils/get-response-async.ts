@@ -9,6 +9,8 @@ import { pull } from 'langchain/hub';
 
 import { env } from '@/env.mjs';
 import { calculationTool } from '@/utils/tools/calculation-tool';
+import { currentStockPortfolioTool } from '@/utils/tools/current-stock-portfolio';
+import { stockPortfolioRecommendationTool } from '@/utils/tools/stock-portfolio-recommendation';
 import { stockTool } from '@/utils/tools/stock-tool';
 import { weatherTool } from '@/utils/tools/weather-tool';
 
@@ -16,6 +18,8 @@ const tools = [
   stockTool,
   calculationTool,
   weatherTool,
+  currentStockPortfolioTool,
+  stockPortfolioRecommendationTool,
   new TavilySearchResults({
     maxResults: 1,
     apiKey: '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',

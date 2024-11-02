@@ -1,3 +1,6 @@
+import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
 import { cn } from '@purplefish/cascadia/utils/cn';
 
 interface MessageProps {
@@ -14,7 +17,7 @@ export const Message = ({ messageType, messageText }: MessageProps) => {
           messageType === 'prompt' ? 'bg-primary text-white' : 'bg-secondary',
         )}
       >
-        {messageText}
+        <Markdown remarkPlugins={[remarkGfm]}>{messageText}</Markdown>
       </span>
     </div>
   );

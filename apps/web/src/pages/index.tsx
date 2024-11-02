@@ -17,7 +17,9 @@ import { Button } from '@purplefish/cascadia/components/ui/button';
 import { Input } from '@purplefish/cascadia/components/ui/input';
 import { ScrollArea } from '@purplefish/cascadia/components/ui/scroll-area';
 
+import { CurrentStockPortfolioWidget } from '@/components/current-stock-portfolio-widget';
 import { Message } from '@/components/message';
+import { StockPortfolioRecommendationWidget } from '@/components/stock-portfolio-recommendation-widget';
 import { StockPriceWidget } from '@/components/stock-price-widget';
 import { ThemeMenu } from '@/components/theme-menu';
 import { WeatherWidget } from '@/components/weather-widget';
@@ -112,6 +114,16 @@ const Chatbot = () => {
             {message.toolName === ToolName.WEATHER && message.toolOutput && (
               <WeatherWidget toolOutput={message.toolOutput} />
             )}
+            {message.toolName === ToolName.CURRENT_STOCK_PORTFOLIO &&
+              message.toolOutput && (
+                <CurrentStockPortfolioWidget toolOutput={message.toolOutput} />
+              )}
+            {message.toolName === ToolName.STOCK_PORTFOLIO_RECOMMENDATION &&
+              message.toolOutput && (
+                <StockPortfolioRecommendationWidget
+                  toolOutput={message.toolOutput}
+                />
+              )}
           </Fragment>
         ))}
         {isLoading && (
