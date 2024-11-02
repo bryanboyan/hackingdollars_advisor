@@ -1,5 +1,4 @@
 import { useMemo } from 'react';
-import { Label, Pie, PieChart } from 'recharts';
 import { z } from 'zod';
 
 import {
@@ -10,12 +9,8 @@ import {
   CardHeader,
   CardTitle,
 } from '@purplefish/cascadia/components/ui/card';
-import {
-  type ChartConfig,
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-} from '@purplefish/cascadia/components/ui/chart';
+
+import { PortfolioChart } from '@/components/portfolio-chart';
 
 interface CurrentStockPortfolioProps {
   toolOutput: string;
@@ -62,67 +57,11 @@ export const CurrentStockPortfolioWidget = ({
         </CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
-        <ChartContainer
-          config={{}}
-          className="mx-auto aspect-square max-h-[300px]"
-        >
-          <PieChart>
-            <ChartTooltip
-              cursor={false}
-              content={<ChartTooltipContent hideLabel />}
-            />
-            <Pie
-              data={data.currentPortfolio.map((stock, index) => {
-                const colorIndex = index % 5;
-                const fill = `hsl(var(--chart-${colorIndex + 1}))`;
-
-                return {
-                  value: stock.value,
-                  ticker: stock.ticker,
-                  fill,
-                };
-              })}
-              dataKey="value"
-              nameKey="ticker"
-              innerRadius={80}
-              strokeWidth={10}
-            >
-              <Label
-                content={({ viewBox }) => {
-                  if (viewBox && 'cx' in viewBox && 'cy' in viewBox) {
-                    return (
-                      <text
-                        x={viewBox.cx}
-                        y={viewBox.cy}
-                        textAnchor="middle"
-                        dominantBaseline="middle"
-                      >
-                        <tspan
-                          x={viewBox.cx}
-                          y={viewBox.cy}
-                          className="fill-foreground text-3xl font-bold"
-                        >
-                          {new Intl.NumberFormat('en-US', {
-                            style: 'currency',
-                            currency: data.currency,
-                          }).format(data.totalValue)}
-                        </tspan>
-                        <tspan
-                          x={viewBox.cx}
-                          y={(viewBox.cy || 0) + 24}
-                          className="fill-muted-foreground"
-                        >
-                          Visitors
-                        </tspan>
-                      </text>
-                    );
-                  }
-                  return null;
-                }}
-              />
-            </Pie>
-          </PieChart>
-        </ChartContainer>
+        <PortfolioChart
+          dataPoints={data.currentPortfolio}
+          totalValue={data.totalValue}
+          currency={data.currency}
+        />
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
         <div className="flex items-center gap-2 font-medium leading-none">
