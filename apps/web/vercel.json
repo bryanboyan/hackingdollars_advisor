@@ -1,8 +1,5 @@
 {
   "buildCommand": "npx turbo build --filter=@hackingdollars/web",
   "trailingSlash": true,
-  "cleanUrls": true,
-  "git": {
-    "deploymentEnabled": false
-  }
+  "cleanUrls": true
 }
