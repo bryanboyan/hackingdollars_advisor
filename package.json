@@ -21,7 +21,7 @@
   "devDependencies": {
     "@purplefish/tsconfig": "workspace:*",
     "patch-package": "^8.0.0",
-    "turbo": "^2.1.1"
+    "turbo": "^2.2.3"
   },
-  "packageManager": "yarn@4.4.1"
+  "packageManager": "yarn@4.5.1"
 }
