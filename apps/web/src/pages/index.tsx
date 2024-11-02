@@ -30,10 +30,13 @@ const suggestions: {
   prompt: string;
   Icon: LucideIcon;
 }[] = [
-  { prompt: 'What is the weather in New York?', Icon: CloudSunIcon },
   { prompt: 'What is the stock price of AAPL?', Icon: BanknoteIcon },
-  { prompt: 'What is sin(45 deg) ^ 2?', Icon: CalculatorIcon },
-  { prompt: 'Tell me about the Eiffel Tower', Icon: BookCheckIcon },
+  { prompt: 'What is my current stock portfolio?', Icon: BanknoteIcon },
+  { prompt: 'What is my largest stock investment?', Icon: BanknoteIcon },
+  {
+    prompt: 'Do you have recommendations on what stocks to buy?',
+    Icon: BanknoteIcon,
+  },
 ];
 
 const Chatbot = () => {
