@@ -25,6 +25,7 @@ export const formatErrors = (
 export const serverSchema = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']),
   OPENAI_API_KEY: z.string(),
+  DATABASE_URL: z.string(),
 });
 
 const serverEnv = serverSchema.safeParse(process.env);
