@@ -426,6 +426,51 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hackingdollars/web@workspace:apps/web":
+  version: 0.0.0-use.local
+  resolution: "@hackingdollars/web@workspace:apps/web"
+  dependencies:
+    "@langchain/community": "npm:^0.3.11"
+    "@langchain/core": "npm:^0.3.17"
+    "@langchain/openai": "npm:^0.3.11"
+    "@purplefish/cascadia": "workspace:*"
+    "@purplefish/db": "workspace:*"
+    "@purplefish/eslint-config": "workspace:*"
+    "@purplefish/prettier-config": "workspace:*"
+    "@purplefish/tsconfig": "workspace:*"
+    "@tanstack/react-query": "npm:^4.36.1"
+    "@trpc/client": "npm:^10.45.2"
+    "@trpc/next": "npm:^10.45.2"
+    "@trpc/react-query": "npm:^10.45.2"
+    "@trpc/server": "npm:^10.45.2"
+    "@types/fs-extra": "npm:^11"
+    "@types/react": "npm:^18.3.12"
+    "@types/semver": "npm:^7.5.8"
+    autoprefixer: "npm:^10.4.20"
+    axios: "npm:^1.7.7"
+    dotenv: "npm:^16.4.5"
+    eslint: "npm:^8.57.1"
+    fs-extra: "npm:^11.2.0"
+    langchain: "npm:^0.3.5"
+    lucide-react: "npm:^0.454.0"
+    mathjs: "npm:^13.2.0"
+    next: "npm:^14.2.16"
+    next-seo: "npm:^6.6.0"
+    next-sitemap: "npm:^4.2.3"
+    next-themes: "npm:^0.3.0"
+    postcss: "npm:^8.4.47"
+    prettier: "npm:^3.3.3"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    react-markdown: "npm:^9.0.1"
+    recharts: "npm:^2.13.3"
+    remark-gfm: "npm:^4.0.0"
+    tailwindcss: "npm:^3.4.14"
+    typescript: "npm:^5.6.3"
+    zod: "npm:^3.23.8"
+  languageName: unknown
+  linkType: soft
+
 "@hookform/resolvers@npm:^3.9.1":
   version: 3.9.1
   resolution: "@hookform/resolvers@npm:3.9.1"
@@ -1268,51 +1313,6 @@ __metadata:
     "@purplefish/prettier-config": "workspace:*"
     prettier: "npm:^3.3.3"
     typescript: "npm:^5.6.3"
-  languageName: unknown
-  linkType: soft
-
-"@hackingdollars/web@workspace:apps/web":
-  version: 0.0.0-use.local
-  resolution: "@hackingdollars/web@workspace:apps/web"
-  dependencies:
-    "@langchain/community": "npm:^0.3.11"
-    "@langchain/core": "npm:^0.3.17"
-    "@langchain/openai": "npm:^0.3.11"
-    "@purplefish/cascadia": "workspace:*"
-    "@purplefish/db": "workspace:*"
-    "@purplefish/eslint-config": "workspace:*"
-    "@purplefish/prettier-config": "workspace:*"
-    "@purplefish/tsconfig": "workspace:*"
-    "@tanstack/react-query": "npm:^4.36.1"
-    "@trpc/client": "npm:^10.45.2"
-    "@trpc/next": "npm:^10.45.2"
-    "@trpc/react-query": "npm:^10.45.2"
-    "@trpc/server": "npm:^10.45.2"
-    "@types/fs-extra": "npm:^11"
-    "@types/react": "npm:^18.3.12"
-    "@types/semver": "npm:^7.5.8"
-    autoprefixer: "npm:^10.4.20"
-    axios: "npm:^1.7.7"
-    dotenv: "npm:^16.4.5"
-    eslint: "npm:^8.57.1"
-    fs-extra: "npm:^11.2.0"
-    langchain: "npm:^0.3.5"
-    lucide-react: "npm:^0.454.0"
-    mathjs: "npm:^13.2.0"
-    next: "npm:^14.2.16"
-    next-seo: "npm:^6.6.0"
-    next-sitemap: "npm:^4.2.3"
-    next-themes: "npm:^0.3.0"
-    postcss: "npm:^8.4.47"
-    prettier: "npm:^3.3.3"
-    react: "npm:^18.3.1"
-    react-dom: "npm:^18.3.1"
-    react-markdown: "npm:^9.0.1"
-    recharts: "npm:^2.13.3"
-    remark-gfm: "npm:^4.0.0"
-    tailwindcss: "npm:^3.4.14"
-    typescript: "npm:^5.6.3"
-    zod: "npm:^3.23.8"
   languageName: unknown
   linkType: soft
 
